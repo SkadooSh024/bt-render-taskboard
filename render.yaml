@@ -20,15 +20,14 @@ services:
   - type: web
     name: bt-taskboard-web
     runtime: static
-    plan: free
     rootDir: frontend
     buildCommand: npm ci && npm run build
     staticPublishPath: dist
-    autoDeployTrigger: "off"
+    autoDeployTrigger: off
     envVars:
-      # Vite đọc biến này lúc build
-      - key: VITE_API_URL
-        sync: false
+    - key: VITE_API_URL
+      sync: false
+
 
 databases:
   - name: bt-taskboard-db
