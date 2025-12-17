@@ -41,7 +41,7 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: 520, margin: "40px auto", fontFamily: "system-ui" }}>
-      <h2>Taskboard</h2>
+      <h2>Taskboard 2</h2>
 
       <form onSubmit={addTask} style={{ display: "flex", gap: 8 }}>
         <input
